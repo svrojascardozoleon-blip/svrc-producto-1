@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background: #E8F5E9;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1B2A1B;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Smooth scroll */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Input focus styles */
+input:focus {
+  outline: none;
+}
+
+/* Remove button default */
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom selection color */
+::selection {
+  background: #A5D6A7;
+  color: #1B2A1B;
+}
